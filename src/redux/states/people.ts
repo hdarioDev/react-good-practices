@@ -10,11 +10,13 @@ export const peopleSlice = createSlice({
     ? JSON.parse(getLocalStorage(LocalStorageTypes.PEOPLE) as string)
     : initialState,
   reducers: {
-    addPerson: (state, action) => {
+    addPeople: (state, action) => {
       setLocalStorage(LocalStorageTypes.PEOPLE, state);
       return action.payload;
     },
   },
 });
 
-export const { addPerson } = peopleSlice.actions;
+export const { addPeople } = peopleSlice.actions;
+
+export default peopleSlice.reducer;
