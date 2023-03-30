@@ -1,12 +1,7 @@
 import { People } from "@/data";
 import { Person } from "@/models";
 import { Checkbox } from "@mui/material";
-import {
-  DataGrid,
-  GridColDef,
-  GridRenderCellParams,
-  GridValueGetterParams,
-} from "@mui/x-data-grid";
+import { DataGrid, GridRenderCellParams } from "@mui/x-data-grid";
 import { useState } from "react";
 
 const Home = () => {
