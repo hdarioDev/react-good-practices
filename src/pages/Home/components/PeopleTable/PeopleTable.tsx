@@ -15,9 +15,9 @@ const PeopleTable = () => {
   const favoritePeople = useSelector((state: AppsStore) => state.favorites);
 
   const findPerson = (person: Person) =>
-    !!selectedPeople.find((people) => people.id === person.id);
+    !!favoritePeople.find((people) => people.id === person.id);
   const filterPerson = (person: Person) =>
-    selectedPeople.filter((people) => people.id !== person.id);
+    favoritePeople.filter((people) => people.id !== person.id);
 
   const handleChange = (person: Person) => {
     const filteredPeople = findPerson(person)
