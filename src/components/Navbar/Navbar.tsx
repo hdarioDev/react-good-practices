@@ -21,7 +21,7 @@ const Navbar = () => {
       <AppBar position="fixed">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            App Vite and React
+            App Project using React JS, MUI and Typescript
           </Typography>
           <IconButton
             color="inherit"
